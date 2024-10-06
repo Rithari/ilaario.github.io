@@ -8,6 +8,10 @@ async function fetchGitHubRepos(username) {
 
         if (response.ok) {
             repos.forEach(repo => {
+                // check if repo.name contains ilaario
+                if (repo.name.includes('ilaario')) {
+                    return;
+                }
                 const repoContainer = document.createElement('div');
                 repoContainer.className = 'repo';
                 repoContainer.id = `repo${repo.id}`;
@@ -35,7 +39,5 @@ async function fetchGitHubRepos(username) {
     } catch (error) {
         console.error('Errore nella richiesta API:', error);
         const errorMessage = document.createElement('p');
-        errorMessage.textContent = "Si è verificato un errore nel caricamento delle repository.";
-        reposSection.appendChild(errorMessage);
     }
 }

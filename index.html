@@ -22,26 +22,26 @@
 
 <main class="container">
     <div class="grid">
-        <section id="about">
-            <hgroup>
-                <h2>About me</h2>
-                <h3>Introduction</h3>
-            </hgroup>
-            <p>Hello there! I'm Dario, a passionate software developer with a knack for crafting efficient and scalable solutions. I thrive on learning new technologies and solving complex problems. My primary interests lie in Java, C and AI Projects, and I enjoy collaborating on innovative projects that push boundaries.</p>
-            <p>Currently, I'm exploring the Artificial Intelligence world. I'm excited about contributing to open-source projects and engaging with the tech community.</p>
+        <div class="about">
             <figure>
-                <img src="[link-immagine]" alt="Profile Picture" />
+                <img src="https://avatars.githubusercontent.com/u/102790684?v=4" alt="Profile Picture" />
                 <figcaption><a href="https://github.com/ilaario" target="_blank">GitHub Profile</a></figcaption>
             </figure>
-        </section>
+            <div class="about-text">
+                <h2>About me</h2>
+                <h3>Introduction</h3>
+                <p>Hello there! I'm Dario, a passionate software developer with a knack for crafting efficient and scalable solutions. I thrive on learning new technologies and solving complex problems. My primary interests lie in Java, C and AI Projects, and I enjoy collaborating on innovative projects that push boundaries.</p>
+                <p>Currently, I'm exploring the Artificial Intelligence world. I'm excited about contributing to open-source projects and engaging with the tech community.</p>
+            </div>
+        </div>
 
         <div id="progetti">
             <hgroup>
                 <h2>Projects</h2>
-                <h3>I miei lavori recenti</h3>
+                <h3>My recent works</h3>
             </hgroup>
-            <p>Qui troverai una selezione dei miei progetti più recenti. Ogni progetto include una descrizione e un link al repository GitHub.</p>
-            <div class="grid" id="projects">
+            <p>Here you can find the last projects I worked on. Every element is a link to the GitHub Repo of the project.</p>
+            <div class="projectList" id="projects">
                 <!-- Progetti -->
             </div>
         </div>
@@ -49,24 +49,22 @@
     </div>
 </main>
 
-<section aria-label="Subscribe example">
-    <div class="container">
-        <article>
-            <hgroup>
-                <h2>Contatti</h2>
-                <h3>Rimani in contatto</h3>
-            </hgroup>
-            <form class="grid">
-                <input type="text" id="firstname" name="firstname" placeholder="Nome" aria-label="Nome" required />
-                <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
-                <button type="submit" onclick="event.preventDefault()">Invia</button>
-            </form>
-        </article>
+<div class="contacts" aria-label="Subscribe example">
+    <div class="contactsContainer">
+        <hgroup>
+            <h2>Contacts</h2>
+            <h3>Let's talk!</h3>
+        </hgroup>
+        <form class="grid">
+            <input type="text" id="firstname" name="firstname" placeholder="Name" aria-label="Name" required />
+            <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+            <button type="submit" onclick="event.preventDefault()">Send</button>
+        </form>
     </div>
-</section>
+</div>
 
-<footer class="container">
-    <small><a href="https://github.com/ilaario" target="_blank">GitHub</a> • <a href="#contatti">Contatti</a></small>
-</footer>
+<div class="footerContainer">
+    <small><a href="https://github.com/ilaario" target="_blank">GitHub</a> • <a href="#contatti">Contacts</a></small>
+</div>
 </body>
 </html>
